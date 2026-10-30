@@ -4,6 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Class Routine 2026</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4f46e5">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 <style>
 :root{box-sizing:border-box;padding-bottom:env(safe-area-inset-bottom,0px);
 --bg:#f2f4f9;--card:#fff;--text:#161a23;--muted:#667085;--line:#e4e8f0;--shadow:0 4px 16px rgba(30,50,110,.08);--chip:#eef2fb}
@@ -110,6 +114,7 @@ function show(){
 }
 show();
 setInterval(show,30000);
+if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}
 </script>
 </body>
 </html>
